@@ -1,6 +1,6 @@
 * {
-    margin: 0;
-    padding: 0;
+    margin: 1em;
+    padding: 2;
 }
 
 body {
@@ -13,9 +13,7 @@ body {
 
 .contenedor > div,
 .contenedor .header, 
-.contenedro .table,
-.contenedor .sidebar,
-.contenedor .footer {
+.contenedro .table {
     
     background: #fff;
     padding: 20px;
@@ -25,30 +23,13 @@ body {
 .contenedor .header {
     background: #c0d00a;
     color: rgb(38, 3, 119);
-    grid-column-start: 1;
-    grid-column-end: -1;
 }
 
-.contenedor .table { 
+table { 
     border-collapse: collapse; 
     margin: 25px 0; 
     font-size: 1em; 
     font-family: sans-serif; 
     min-width: 450px; 
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15); 
-}
-
-.contenedor .sidebar {
-    grid-column: 3 / 4;
-    background: #faa43d;
-    text-align: center;
-
-    grid-row: span 2; 
-}
-
-.contenedor .footer {
-    background: #12203E;
-    color: #fff;
-    grid-column: span 3;
-    
 }
