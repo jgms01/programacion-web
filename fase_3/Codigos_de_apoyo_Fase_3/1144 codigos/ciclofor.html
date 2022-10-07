@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>Ciclo for</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+
+<h2>JavaScript Loops</h2>
+<h2>Ciclo For</h2>
+
+<p id="loop"></p>
+
+<script>
+	function ciclo(){
+		var a = document.f1.a1.value;
+		var b = document.f1.b1.value;
+		var text = "";
+		var i;
+for (i = a; i < b; i++) {
+  text += "The number is " + i + "<br>";
+}
+document.getElementById("loop").innerHTML = text;
+	}
+
+</script>
+
+<form name="f1" action="ciclofor.html" method="POST">
+<input type="text" class="form-control" id="a1" name="a1" placeholder="Escriba un número">
+  <br><br>
+  <input type="text" class="form-control" id="b1" name="b1" placeholder="Escriba un número"> 
+	<br><br>
+  <input type="Button" name="" value="calcular" onclick="ciclo()" class="btn btn-primary">
+  <br><br>
+
+  </form>
+
+</body>
+</html>

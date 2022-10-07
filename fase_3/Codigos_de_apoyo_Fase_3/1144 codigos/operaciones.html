@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+      <title>Operaciones JS</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    </head>
+
+      <script>
+      function operar() 
+    {
+        var a1 = document.f1.a.value;
+        var b1 = document.f1.b.value;
+        var c1 = document.f1.c.value;
+        var d1 = document.f1.d.value;
+        var c1 = (parseFloat(a1)*parseFloat(b1))/100;
+        var d1 = parseFloat(a1)+parseFloat(b1);
+        document.f1.c.value=c1;
+        document.f1.d.value=d1;        
+    }
+      </script>
+
+      <body>
+        <div class="container">
+          <h2>Operaciones</h2>
+
+          <form class="form-horizontal" name="f1" action="operaciones.html" role="form" method="POST">
+
+            <div class="form-group">
+              <label>Numero a:</label>
+              <input type="text" class="form-control" name="a" placeholder="Ingrese numero a">
+            </div>
+
+            <div class="form-group">
+              <label>Numero b:</label>
+              <input type="text" class="form-control" name="b" placeholder="Ingrese numero b">
+            </div>
+
+            <input type="Button" name="" value="Operar" onclick="operar()" class="btn btn-primary">
+
+            <div class="form-group">
+              <label>Resultado 1:</label>
+              <input type="text" class="form-control" name="c" placeholder="Resultado 1">
+            </div>
+
+            <div class="form-group">
+              <label>Resultado 2:</label>
+              <input type="text" class="form-control" name="d" placeholder="Resultado 2">
+            </div>
+
+          </form>
+
+        </div>
+        
+      </body>
+</html>

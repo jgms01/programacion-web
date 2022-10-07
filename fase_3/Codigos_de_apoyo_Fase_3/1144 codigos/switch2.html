@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>Switch case</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+
+  <h1>Switch case</h1>
+
+<p id="demo"></p>
+
+<script>
+function calc(){
+  var y = document.f1.a.value;
+  var ee = document.f1.e.value;
+  var ff = document.f1.f.value;
+  var rr = document.f1.res.value;
+  var val;
+switch (parseInt(y)) {
+  case 0:
+    val=parseFloat(ee)+parseFloat(ff)
+    document.f1.res.value=val;
+    //alert('El resultado de la suma es: '+val)
+    break;
+  case 1:
+    val=parseFloat(ee)-parseFloat(ff)
+    document.f1.res.value=val;
+    //alert('El resultado de la resta es: '+val)
+    break;
+  case 2:
+    val=parseFloat(ee)*parseFloat(ff)
+    document.f1.res.value=val;
+    alert('El resultado de la multiplicación es: '+val)
+    break;
+  case 3:
+    val=parseFloat(ee)/parseFloat(ff)
+    document.f1.res.value=val;
+    alert('El resultado de la división es: '+val)
+    break;
+}
+}
+
+
+
+</script>
+
+<form name="f1" method="POST">
+<div class="form-group">
+  <label>Seleccione una opción</label>
+
+  <select name="a" class="form-control">
+  <option value="0" >Sumar</option>
+  <option value="1" >Restar</option>
+  <option value="2" >Multiplicar</option>
+  <option value="3" >Dividir</option>
+</select>
+  <br>
+  <label>Digite un número</label>
+  <br>
+  <input type="text" class="form-control" name="e">
+  <br>
+  <label>Digite un número</label>
+  <br>
+  <input type="text" class="form-control" name="f">
+  <br>
+  <input type="button" name="" value="Ejecutar" onclick="calc()" class="btn btn-success">
+  <br><br>
+  <label for="resultado">Resultado:</label>
+  <br>
+  <input type="text" class="form-control" id="res" name="res" placeholder="Aquí se imprime el resultado">
+</div>
+</form>
+</div>
+
+</body>
+</html>

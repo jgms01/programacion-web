@@ -96,10 +96,50 @@
            
             <h3>Calcular Megabytes</h3><br><br>
 
+            <form name="f2" action="Uti2.html" method="POST">
 
-            <p>
+                <input type="text" class="form-control" id="a" name="a" placeholder="Digite aquí el valor a convertir" style="width: 300px">
+  
+  
+                <select name="b1" class="form-control"style="width: 300px">
+                <option value="1" style="color: black" >Byte</option>
+                <option value="1024" style="color: black" >Kilobyte (KB)</option>
+                <option value="1.048.576" style="color: black" >Megabyte (MB)</option>
+                <option value="1.073.741.824" style="color: brown">Gigabyte (GB)</option>
+                <option value="1.099.511.627.776" style="color: brown">Terabyte (TB)</option>
+                </select>
 
-            </p>
+                <input type="Button" name="" value="convertir" onclick="calcular()" class="btn btn-primary" style="background-color: #1D5CA7">
+
+                <select name="b2" class="form-control"style="width: 300px">
+                <option value="1" style="color: black" >Byte</option>
+                <option value="1024" style="color: black" >Kilobyte (KB)</option>
+                <option value="1.048.576" style="color: black" >Megabyte (MB)</option>
+                <option value="1.073.741.824" style="color: brown">Gigabyte (GB)</option>
+                <option value="1.099.511.627.776" style="color: brown">Terabyte (TB)</option>
+                </select>
+
+                <fieldset disabled>
+                <input type="text" class="form-control" id="c" name="c" placeholder="Resultado"style="width: 300px">
+                            
+                                
+            
+            </form>
+
+            <script>
+                function calcular(){
+                    
+                    var a = document.f2.a.value;
+                    var b = document.f2.b1.value;
+                    var x = document.f2.b2.value;
+                    var r = document.f2.c.value;
+                    r=(parseFloat(a)*parseFloat(x))/parseFloat(b);
+                   document.f2.c.value=r;
+                    
+                }
+                
+                </script> 
+ 
 
         </Main>
        
@@ -107,7 +147,7 @@
             
             <h3>Utilidades</h3><br><br>
             <p>
-                Este modulo permite: 
+                Este modulo permite seleccionar de una lista desplegable la cantidad de KB, MB, GB o TB  y comvertirlos según la seleccion del usuario.
             </p>
                
            

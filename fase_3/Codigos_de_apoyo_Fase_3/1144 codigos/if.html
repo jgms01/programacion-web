@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Comparación If</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+
+<h1>Comparación If</h1>
+
+<script>
+function compara(){
+    
+    
+    var a = parseInt(document.comp.a.value);
+    var b = parseInt(document.comp.b.value);
+    
+if (a==b) {
+ alert('El numero 1 es igual que el numero 2')
+} 
+
+if (a>b) {
+  alert('El numero 1 es mayor que el numero 2')
+} 
+
+if (a<b) {
+  alert('El numero 1 es menor que el numero 2')
+}
+  
+
+    
+    
+}
+</script> 
+
+
+
+<form name="comp" action="if.html" method="post">
+    <div class="form-group">
+    	
+    <label for="numero1">Número 1:</label>
+    <input type="number" class="form-control" id="a" placeholder="Ingrese un número" name="a">
+	
+    <br>
+    <label for="numero2">Número 2:</label>
+    <input type="number" class="form-control" id="b" placeholder="Ingrese un número" name="b">
+    <br>
+	<input type="Button" name="" value="Comparar" onclick="compara()" class="btn btn-primary">
+  <input type="Button" name="" value="Limpiar" onclick="reset()" class="btn btn-primary">
+	
+
+	</div>
+  	</form>
+
+
+      
+</div>
+
+</body>
+</html>
