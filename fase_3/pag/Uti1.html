@@ -96,32 +96,45 @@
            
             <h3>Calcular Productos</h3><br><br>
 
-            <input type="text" placeholder="Valor de Compra. " id="N1"><br>
-            <input type="text" placeholder="% utilidad o ganancia. " id="N2"><br>
-            <input type="text" placeholder="% IVA. " id="N3"><br><br>
-            
-            <input type="button" name="name" value="Calcular" onclick="Pro();"><br><br>
+            <form name="f1" action="calculadora.html" method="POST">
+                <div class="form-group">
 
-            <input type="text" placeholder="Valor de venta $: " id="N4"><br>
-            <input type="text" placeholder="Ganancia $: " id="N5;"><br>
+                    <label for="numero1">Valor de Compra</label>
+                    <input type="text" placeholder="Valor de Compra. " id="N1" class="form-control" name="N1"><br>
+                    
+                    <label for="numero1">% utilidad o ganancia</label>
+                    <input type="text" placeholder="% utilidad o ganancia. " id="N2" class="form-control" name="N2"><br>
+                    
+                    <label for="numero1">% IVA.</label>
+                    <input type="text" placeholder="% IVA. " id="N3" class="form-control" name="N3"><br><br>
+                    
+                    <input type="button" name="name" value="Calcular" onclick="Pro()" class="btn btn-success"><br><br>
+        
+                    <label for="numero1">Valor de venta $:</label>
+                    <input type="text" placeholder="Valor de venta $: " id="N4" class="form-control" name="N4"><br>
+                    
+                    <label for="numero1">Ganancia $:</label>
+                    <input type="text" placeholder="Ganancia $: " id="N5" class="form-control" name="N5"><br>
+        
+                </div>
+            
+            </form>
 
             <script type="text/javascript">
 
                 function Pro()
                 {
-                    var Nu1=parseInt(document.getElementById('N1').value);
-                    var Nu2=parseInt(document.getElementById('N2').value);
-                    var Nu3=parseInt(document.getElementById('N3').value);
-
-                    var R1;
-                    var R2;
-
-                    R1=((Nu1*Nu2)/100) + ((Nu1*Nu3)/100) + Nu1;
-                    R2= (Nu1*Nu2)/100;
-
-                    alert("Valor de Venta: "+R1);
-                    alert("Ganancia: "+R2);
+                   
+                    var N1 = document.f1.N1.value;
+                    var N2 = document.f1.N2.value;
+                    var N3 = document.f1.N3.value;
+                   
                 
+                    R1=parseFloat((N1*N2)/100) + (parseFloat(N1*N3)/100) + parseFloat(N1);
+                    document.f1.N4.value=R1;
+                   
+                    R2= parseFloat(N1*N2)/100;
+                    document.f1.N5.value=R2;
 
                 }
 
