@@ -45,11 +45,13 @@
                             </a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="Admin1.html">Asministrador</a></li>
-                                
-                                <li> <hr class="dropdown-divider"></li>
+
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
 
                                 <li><a class="dropdown-item" href="Admin2.html">Resumen</a></li>
-                                
+
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
@@ -59,19 +61,25 @@
                             </a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="Inv1.html">Ingresar Productos</a></li>
-                                
-                                <li> <hr class="dropdown-divider"></li>
-                                
+
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+
                                 <li><a class="dropdown-item" href="Inv2.html">Actualizar Productos</a></li>
-                                
-                                <li> <hr class="dropdown-divider"></li>
-                                
+
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+
                                 <li><a class="dropdown-item" href="Inv3.html">Eliminar Productos</a></li>
-                                
-                                <li> <hr class="dropdown-divider"></li>
-                                
+
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+
                                 <li><a class="dropdown-item" href="Inv4.html">Consultar Productos</a></li>
-                                
+
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
@@ -81,33 +89,95 @@
                             </a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="Uti1.html">Calcular Productos</a></li>
-                                
-                                <li> <hr class="dropdown-divider"></li>
-                                
+
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+
                                 <li><a class="dropdown-item" href="Uti2.html">Calcular Megabytes</a></li>
-                                
+
                             </ul>
                         </li>
-                        
+
 
                     </ul>
-                    
+
                 </div>
             </div>
         </nav><br><br>
-    
+
         <div class="containe" r>
             <main class="row">
                 <section class="col-9">
 
                     <article>
-                        <H2>Administrador</H2><br><br>
 
-                        <p>
-                            En esta actividad vamos a hacer un repaso de las etiquetas vistas en HTML durante el primer
-                            corte, presta especial atención para hacerlo correctamente.
-                        </p>
-                       
+                        <h2>Formulario de ingreso de usuarios</h2> <br>
+
+
+                        <form action="Admin1.html" method="POST">
+
+                            <div class="form-group">
+                                <label for="email">Email:</label>
+                                <input type="email" class="form-control"
+                                    placeholder="Ingrese aquí su correo electrónico" id="email" name="e"
+                                    style="width:300px">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Nombre:</label>
+                                <input type="text" class="form-control" placeholder="Ingrese aquí su nombre" id="email"
+                                    name="n" style="width:300px">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Teléfono:</label>
+                                <input type="number" class="form-control" placeholder="Teléfono" id="email" name="t"
+                                    style="width:300px">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Ciudad:</label>
+                                <input type="text" class="form-control" placeholder="Ciudad" id="email" name="c"
+                                    style="width:300px">
+                            </div>
+                            <div class="form-group">
+                                <label for="pwd">Contraseña:</label>
+                                <input type="password" class="form-control" placeholder="Contraseña" id="pwd" name="p"
+                                    style="width:300px">
+                            </div>
+
+                            <br>
+
+                            <select class="form-select" aria-label="Default select example" name="g"
+                                style="width:300px">
+                                <option selected>Seleccione su género</option>
+                                <option value="1">F</option>
+                                <option value="2">M</option>
+                                <option value="3">Other</option>
+                            </select>
+
+                            <br>
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="Soltero">
+                                <label class="form-check-label" for="Soltero">
+                                    Soltero
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="Casado" checked>
+                                <label class="form-check-label" for="Casado">
+                                    Casado
+                                </label>
+                            </div>
+
+                            <br>
+
+                            <br>
+
+                            <button type="submit" class="btn btn-primary">Registrar usuarios</button>
+                            <button type="submit" class="btn btn-danger">Eliminar usuarios</button>
+
+                        </form> <br><br>
+
 
                     </article>
 
@@ -116,16 +186,14 @@
                 <aside class="col-3 bg-warning">
                     <h3>Administrador</h3><br><br>
                     <p>
-                       Este modulo permite: 
-                        <br>
-                       
+                        En este modulo realizamos el registro del ingreso del Usuario al sistema.
                     </p>
 
                 </aside>
 
             </main>
             <footer class="footer">
-              
+
                 <p align="center">
                     <b>Sitio Web Diseñado por: Juan Guillermo Martinez Souza</b> <br>
                     Fecha de pulbicacion: 2022 <br>
